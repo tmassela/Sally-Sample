@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>React Sally Sample Resume</title>
+  <link href="reactSallySampleResume.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div id="application-root"></div>
@@ -20,13 +21,16 @@
 <script type="text/babel">
   function App(props) {
   console.log(props)
+  
   return (
+    
+    <div>
     <nav id="home">
     <ul>
-      <li class="nav"><a href="#home">Home</a></li>
-      <li class="nav"><a href="#education">Education</a></li>
-      <li class="nav"><a href="#employment">Employment History</a></li>
-      <li class="nav"><a href="#contact">Contact Me</a></li>
+      <li className="nav"><a href="#home">Home</a></li>
+      <li className="nav"><a href="#education">Education</a></li>
+      <li className="nav"><a href="#employment">Employment History</a></li>
+      <li className="nav"><a href="#contact">Contact Me</a></li>
     </ul>
   </nav>
 
@@ -50,14 +54,14 @@
     <section id="employment">
       <h3>Employment History</h3>
        <ul >
-        <li class = "title">Senior Solutions Architect, Google  2010-present </li>
+        <li className = "title">Senior Solutions Architect, Google  2010-present </li>
           
         <p> Lorem ipsum......here's a fantastic description of all of the amazing work I did at this company, contributed to it's growth and solved problems. </p>
         
-        <li class = "title">Front End Web Developer, Salesforce, 2007-2010</li>
+        <li className = "title">Front End Web Developer, Salesforce, 2007-2010</li>
            <p> Lorem ipsum......here's a fantastic description of all of the amazing work I did at this company, contributed to it's growth and solved problems. </p>
         
-        <li class = "title">Data Analyst, Indiana University 2004-2007</li>
+        <li className = "title">Data Analyst, Indiana University 2004-2007</li>
           <p> Lorem ipsum......here's a fantastic description of all of the amazing work I did at this company, contributed to it's growth and solved problems. </p>
         
       </ul>
@@ -72,15 +76,16 @@
       555 Main Street New York, NY  33333
       </address>
       </p>
-      <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg">
+      <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"/>
     </section>
 
     </main>
     <footer>© 2019 Sally A. Student</footer>
+    </div>
   );
 }
 
-/ 
+
 ReactDOM.render(
   <App />,
   document.querySelector('#application-root')
